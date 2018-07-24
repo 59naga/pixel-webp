@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+node_js:
+  - 10
+cache: yarn
+before_deploy:
+  - rm .gitignore
+  - yarn build
+  
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: i59naga@icloud.com
+  api_key:
+    secure: t45Q80hRd82jtExBjCcV7dfGofrtYkImQBKBBUFJVLQjZ4+g8uzYKfDh702kkY1q36OQ8FkcQg5NMiAgSXmRvEPEiNgJL3GBuZJce/HWthtUOjREA0mddcNLTmYWNlDDOxL3CH9ZbBzIS32E3X7cgiV/2Kni/X0rBoMrHKssH35pJTcJbCV4Hn7aHxm9Pm/F3Up+9b3hnvOjsP4v9WoUkZeae7kSNvpjHIV1hoySjYW7cpMdEKqahjRJQy+/URW53Nv0PnItGIzFOxwUrK3+JY9qDYrJApclBkWFl9EAZLzbZisHWFz5mKo/5sjqSPlGZExKGwkuBXmVNHlKLuYMUCGkwaBrY6csQjLHdHgoshp47VS6MSZDyrvlzk498+OwOJ3CS8LUbYoaAzezzcyQ1tv/j+BaOMHMCvT1OtbvS8kKI43PxsNO90DxsL8rCeioBPdA/WCdebDjDDLcMfxTnzUSmTbafgzgXBD+VzD2pPPUpT2P1z10/veAI1yhvZ8ECspyoAyY0Mztc5J9FCOqOh1yqtVYe++P6Ly+Crk5UTvBByncIePzvSrrldNWyMd8rLJfGqY4Ypya5fZpC4yXbrRX0DFumCoTuvWnyWBbTrgpJAYaY6cOxjSVSrD8TypzM+33agUFbbhCbQL06Ggp2iQ1bnoBbCWgh5O2DpDh7RE=
