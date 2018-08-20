@@ -1,5 +1,6 @@
 {
   "name": "pixel-webp",
+  "version": "0.0.0",
   "description": "Parse Webp to ImageData in cross-platform",
   "files": [
     "index.js",
@@ -11,7 +12,7 @@
     "format": "prettier *.mjs --write",
     "test": "node --experimental-modules test.mjs",
     "build": "webpack index.mjs --output index.js",
-    "postversion": "git push --follow-tags && conventional-github-releaser -p atom -r 0"
+    "postversion": "git push --follow-tags && conventional-github-releaser -p atom"
   },
   "dependencies": {
     "@59naga/libwebp": "github:59naga/libwebpjs#v0.0.0"
@@ -29,10 +30,18 @@
   "prettier": {
     "singleQuote": true
   },
-  "optionalDependencies": {
-    "conventional-github-releaser": "^3.1.2"
-  },
   "author": "59naga <i59naga@icloud.com>",
   "license": "MIT",
-  "version": "0.0.0"
+  "keywords": [
+    "pixel",
+    "webp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/59naga/pixel-webp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/59naga/pixel-webp/issues"
+  },
+  "homepage": "https://github.com/59naga/pixel-webp#readme"
 }
