@@ -1,4 +1,4 @@
-pixel-webp
+[pixel-webp](https://unpkg.com/pixel-webp/)
 ---
 <p align="right">
   <a href="https://www.npmjs.com/package/pixel-webp">
